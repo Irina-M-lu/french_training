@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Frances Words</title>
+</head>
+
+<body>
+  <div class="dictionary-page">
+    <h3 class="h3">Mon dictionnaire actif</h3>
+    <span class="drag-message">Faites glisser les mots que vous avez déjà appris dans la colonne de droite</span>
+
+    <div class="dictionary">
+      <div class="container words new-words">
+        <h4>Mots à apprendre</h4>
+        <div id="new-word1" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+            сообщество - la communauté</p>
+        </div>
+        <div id="new-word2" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31">
+            написание книги - l'écriture du livre</p>
+        </div>
+        <div id="new-word3" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="31">
+            скоро - bientôt</p>
+        </div>
+        <div id="new-word4" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag4" width="88" height="31">
+            арахис - cacahuètes</p>
+        </div>
+        <div id="new-word5" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag5" width="88" height="31">
+            покупать - acheter</p>
+        </div>
+        <div id="new-word6" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag6" width="88" height="31">
+            заниматься чем-либо - s'occuper de</p>
+        </div>
+        <div id="new-word7" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag7" width="88" height="31">
+            встречаться - rencontrer</p>
+        </div>
+        <div id="new-word8" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag8" width="88" height="31">
+            мнение - avis</p>
+        </div>
+        <div id="new-word9" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag9" width="88" height="31">
+            ложиться спать - se coucher</p>
+        </div>
+        <div id="new-word10" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag10" width="88" height="31">
+            зрелость - maturité</p>
+        </div>
+        <div id="new-word11" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag11" width="88" height="31">
+            мучиться - tourmenter se</p>
+        </div>
+        <div id="new-word12" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag12" width="88" height="31">
+            гром - tonnerre</p>
+        </div>
+        <div id="new-word13" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag13" width="88" height="31">
+            ставить, помещать - poser</p>
+        </div>
+        <div id="new-word14" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <p draggable="true" ondragstart="drag(event)" id="drag14" width="88" height="31">
+            большой, крупный - gross</p>
+        </div>
+
+      </div>
+
+      <div class="container words active-words" id="active-word" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h4>Des mots que je connais déjà</h4>
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

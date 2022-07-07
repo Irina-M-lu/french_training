@@ -339,7 +339,7 @@ label {
 @media (max-width: 700px){
   .exercise-page {
     height: 100vh;
-  
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
@@ -347,21 +347,22 @@ align-items: center;
   }
 
   .h3 {
-    margin: 1rem 0;
-    font-size: 1.5rem;
+    margin: 0;
+    font-size: 1.3rem;
     line-height: 2.5rem;
+    letter-spacing: normal;
     
   }
 
   .btn {
-    top: 10rem;
+    top: 8rem;
     height: 15%;
     width: 70%;
     font-size: 1.3rem;
   }
 
   label {
-    top: 18rem;
+    top: 16rem;
    height: 15%;
  
    width: 50%;
@@ -389,6 +390,9 @@ align-items: center;
     max-width: 15rem;
     width: 100%;
     font-size: 1.2rem;
+    line-height: 1.2rem;
+    margin-top: 2rem;
+    text-shadow: none;
   }
 
   .btn-check {

@@ -5,17 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Frances Words</title>
+  <title>Hebrew Words</title>
 </head>
 
 <body>
   <div class="dictionary-page">
-    <h3 class="h3">Mon dictionnaire actif</h3>
-    <span class="drag-message">Faites glisser les mots que vous avez déjà appris dans la colonne de droite</span>
+    <h3 class="h3">Мой словарь</h3>
+
+    
+    <span class="drag-message">Перетащите слова, которые вы уже знаете, в правую колонку</span>
 
     <div class="dictionary">
       <div class="container words new-words">
-        <h4>Mots à apprendre</h4>
+        <h4>Надо выучить</h4>
         <div id="new-word1" ondrop="drop(event)" ondragover="allowDrop(event)">
           <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
             сообщество - la communauté</p>
@@ -76,7 +78,7 @@
       </div>
 
       <div class="container words active-words" id="active-word" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <h4>Des mots que je connais déjà</h4>
+        <h4>Уже знаю</h4>
 
       </div>
     </div>

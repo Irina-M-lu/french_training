@@ -17,60 +17,81 @@ let francesInput = document.querySelector('input');
 
 let arr = [
   {
-    "motRus": "сообщество",
-    "motFrance": "la communauté"
+    "motRus": "папа",
+    "motFrance": "אבא"
   },
   {
-    "motRus": "написание книги",
-    "motFrance": "l'écriture du livre"
+    "motRus": "сказка",
+    "motFrance": "אגדה"
   },
   {
-    "motRus": "скоро",
-    "motFrance": "bientôt"
+    "motRus": "рыба",
+    "motFrance": "דג"
   },
   {
-    "motRus": "арахис",
-    "motFrance": "cacahuètes"
+    "motRus": "любовь",
+    "motFrance": "אהבה"
   },
   {
-    "motRus": "покупать",
-    "motFrance": "acheter"
+    "motRus": "это",
+    "motFrance": "זה"
   },
   {
-    "motRus": "заниматься чем-либо",
-    "motFrance": "s'occuper de"
+    "motRus": "хорошо, хороший",
+    "motFrance": "טוב"
   },
   {
-    "motRus": "встречаться",
-    "motFrance": "rencontrer"
+    "motRus": "рука",
+    "motFrance": "יד"
   },
   {
-    "motRus": "мнение",
-    "motFrance": "avis"
+    "motRus": "как, каким образом?",
+    "motFrance": "איך"
   },
   {
-    "motRus": "ложиться спать",
-    "motFrance": "se coucher"
+    "motRus": "мальчик",
+    "motFrance": "ילד"
   },
   {
-    "motRus": "зрелость",
-    "motFrance": "maturité"
+    "motRus": "день",
+    "motFrance": "יום"
   },
   {
-    "motRus": "мучиться",
-    "motFrance": "tourmenter se"
+    "motRus": "солнце",
+    "motFrance": "שמש"
   },
   {
-    "motRus": "гром",
-    "motFrance": "tonnerre"
+    "motRus": "семья",
+    "motFrance": "משפחה"
   },
   {
-    "motRus": "ставить, помещать",
-    "motFrance": "poser"
+    "motRus": "квартира",
+    "motFrance": "דירה"
   },
   {
-    "motRus": "большой, крупный",
-    "motFrance": "gros"
+    "motRus": "много",
+    "motFrance": "הרבה"
+  },
+
+  {
+    "motRus": "кухня",
+    "motFrance": "מטבח"
+  },
+  {
+    "motRus": "маленький",
+    "motFrance": "קטן"
+  },
+  {
+    "motRus": "красиво, красивый",
+    "motFrance": "יפה"
+  },
+  {
+    "motRus": "рядом, около",
+    "motFrance": "על-יד"
+  },
+  {
+    "motRus": "утро",
+    "motFrance": "בוקר"
   },
 
 ];
@@ -88,18 +109,18 @@ function getWord() {
 }
 
 function okey() {
-  frontCheck.innerText = "On continue?"
-  setMessage(`C'est correct!`, 'blue');
+  frontCheck.innerText = "Идем дальше?"
+  setMessage(`Правильно!`, 'blue');
   setTimeout(setMessage, 6000);
 }
 
 function fillInput() {
-  setMessage('Ecrire le mot en français', 'red')
+  setMessage('Напишите слово на иврите', 'red')
   setTimeout(setMessage, 6000);
 }
 
 function checkLength() {
-  setMessage(`Il y a des lettres supplémentaires`, 'darkviolet');
+  setMessage(`Здесь есть лишние буквы`, 'darkviolet');
 };
 
 function correctInput() {
@@ -109,11 +130,11 @@ function correctInput() {
   for (let n = 0; n < correctWord.length; n++) {
     if (wrongWord.length < correctWord.length) {
       console.log(123);
-      setMessage(`Il manque des lettres au mot`, 'orange');
+      setMessage(`Здесь не хватает букв`, 'orange');
       setTimeout(setMessage, 6000);
     } else if (wrongWord[n] !== correctWord[n]) {
       wrongLetter.push(wrongWord[n]);
-      setMessage(`Notez les lettres incorrect: ${wrongLetter}`, 'red');
+      setMessage(`Ошибка в буквах: ${wrongLetter}`, 'red');
       setTimeout(setMessage, 6000);
     }
   }
@@ -154,13 +175,12 @@ Btn.addEventListener('click', () =>
   getWord());
 
 btnCheck.addEventListener('click', function () {
-  if (frontCheck.innerText === "Vérification") {
+  if (frontCheck.innerText === "Проверить") {
     check();
   } else {
     restart();
   };
 });
-
 
 
 

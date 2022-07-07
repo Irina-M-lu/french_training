@@ -135,7 +135,7 @@ function correctInput() {
     } else if (wrongWord[n] !== correctWord[n]) {
       wrongLetter.push(wrongWord[n]);
       setMessage(`Ошибка в буквах: ${wrongLetter}`, 'red');
-      setTimeout(setMessage, 6000);
+      setTimeout(setMessage, 8000);
     }
   }
 };

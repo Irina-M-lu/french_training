@@ -123,9 +123,13 @@ function checkLength() {
   setMessage(`Здесь есть лишние буквы`, 'darkviolet');
 };
 
+
+
 function correctInput() {
+  
   let correctWord = arr[rand].motFrance.split('');
   let wrongWord = francesInput.value.split('');
+  
   let wrongLetter = [];
   for (let n = 0; n < correctWord.length; n++) {
     if (wrongWord.length < correctWord.length) {
@@ -153,11 +157,12 @@ function restart() {
 }
 
 function check() {
-  if (francesInput.value === arr[rand].motFrance) {
+ 
+  if (francesInput.value.trim() === arr[rand].motFrance) {
     okey();
-  } else if (francesInput.value == '') {
+  } else if (francesInput.value.trim() == '') {
     fillInput();
-  } else if (francesInput.value.length > arr[rand].motFrance.length) {
+  } else if (francesInput.value.trim().length > arr[rand].motFrance.length) {
     checkLength();
   } else {
     correctInput();

@@ -93,7 +93,75 @@ let arr = [
     "motRus": "утро",
     "motFrance": "בוקר"
   },
-
+  {
+    "motRus": "работать",
+    "motFrance": "לעבוד"
+  },
+  {
+    "motRus": "навещать, посещать",
+    "motFrance": "לבקר"
+  },
+  {
+    "motRus": "подниматься",
+    "motFrance": "לעלות"
+  },
+  {
+    "motRus": "учиться",
+    "motFrance": "ללמוד"
+  },
+  {
+    "motRus": "сидеть",
+    "motFrance": "לשבת"
+  },
+  {
+    "motRus": "петь",
+    "motFrance": "לשיר"
+  },
+  {
+    "motRus": "покупать",
+    "motFrance": "לקנות"
+  },
+  
+  {
+    "motRus": "офис",
+    "motFrance": "משרד"
+  },
+  {
+    "motRus": "кто?",
+    "motFrance": "?מי"
+  },
+  {
+    "motRus": "где?",
+    "motFrance": "?איפה"
+  },
+  {
+    "motRus": "мы",
+    "motFrance": "אנחנו"
+  },
+  {
+    "motRus": "когда?",
+    "motFrance": "?מתי"
+  },
+  {
+    "motRus": "время",
+    "motFrance": "זמן"
+  },
+  {
+    "motRus": "сегодня",
+    "motFrance": "היום"
+  },
+  {
+    "motRus": "извините",
+    "motFrance": "סליחה"
+  },
+  {
+    "motRus": "встречать",
+    "motFrance": "לפגוש"
+  },
+  {
+    "motRus": "учиться",
+    "motFrance": "שולחן"
+  },
 ];
 
 clearInput();
